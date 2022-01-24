@@ -23,3 +23,28 @@
 	        implementation 'com.github.mohamedtamer0:AndroidLibrary:Tag'
 	}
 ```
+##
+
+# 1- Add Two Button In Activity main
+
+```Kotlin
+    private lateinit var btn1:Button
+    private lateinit var btn2:Button
+```
+
+# 2- Add This Code im MainActivity.kt = override fun onCreate
+
+```Kotlin
+btn1 = findViewById(R.id.btn1)
+btn2 = findViewById(R.id.btn2)
+
+
+btn1.setOnClickListener {
+    ToastPreview.toastShort(this,"Hello Short")
+}
+
+btn2.setOnClickListener {
+    ToastPreview.toastLong(this,"Hello Long")
+}
+```
+
